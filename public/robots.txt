@@ -4,4 +4,4 @@ Disallow: /api/
 
 Allow: /
 
-Sitemap: https://yourdomain.com/sitemap.xml
+Sitemap: https://www.601bullies.com/sitemap.xml
