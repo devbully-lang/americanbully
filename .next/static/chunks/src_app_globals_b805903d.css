@@ -515,6 +515,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   max-width: var(--container-6xl);
 }
 
+.max-w-md {
+  max-width: var(--container-md);
+}
+
 .max-w-sm {
   max-width: var(--container-sm);
 }
@@ -557,6 +561,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .items-center {
   align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .justify-between {
@@ -731,6 +739,16 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 @supports (color: color-mix(in lab, red, red)) {
   .bg-black\/50 {
     background-color: color-mix(in oklab, var(--color-black) 50%, transparent);
+  }
+}
+
+.bg-black\/60 {
+  background-color: #0009;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .bg-black\/60 {
+    background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
   }
 }
 
@@ -964,6 +982,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   color: var(--color-green-600);
 }
 
+.text-red-600 {
+  color: var(--color-red-600);
+}
+
 .text-white {
   color: var(--color-white);
 }
@@ -1132,6 +1154,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   }
 }
 
+.disabled\:opacity-50:disabled {
+  opacity: .5;
+}
+
 @media (width >= 40rem) {
   .sm\:p-8 {
     padding: calc(var(--spacing) * 8);
@@ -1253,6 +1279,7 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --color-red-600: oklch(57.7% .245 27.325);
     --color-yellow-100: oklch(97.3% .071 103.193);
     --color-yellow-500: oklch(79.5% .184 86.047);
     --color-yellow-900: oklch(42.1% .095 57.708);
@@ -1273,6 +1300,7 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
     --color-white: #fff;
     --spacing: .25rem;
     --container-sm: 24rem;
+    --container-md: 28rem;
     --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;

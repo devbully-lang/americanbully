@@ -1,3 +1,6 @@
 {
-  "/page": "app/page.js"
+  "/api/contact/route": "app/api/contact/route.js",
+  "/contact/page": "app/contact/page.js",
+  "/puppies/[slug]/page": "app/puppies/[slug]/page.js",
+  "/puppies/page": "app/puppies/page.js"
 }
