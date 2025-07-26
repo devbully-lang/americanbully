@@ -1,6 +1,6 @@
 import { availablePups } from '@/lib/puppyData'; // Import your puppy data
 
-// Helper function to generate the XML string for the sitemap
+// This function generates the final XML string
 function generateSiteMap(allUrls: { url: string; lastModified: string; priority: number }[]): string {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -20,15 +20,17 @@ function generateSiteMap(allUrls: { url: string; lastModified: string; priority:
 }
 
 export async function GET() {
-  const baseUrl = 'https://www.601bullies.com';
+  // IMPORTANT: Replace this with your actual, live domain name
+  const baseUrl = 'https://www.601bullies.com'; 
   const lastModified = new Date().toISOString();
 
-  // 1. Core Static Pages
+  // 1. Define all of your static pages
   const staticPages = [
     '', // Homepage
     '/about',
     '/males',
     '/females',
+    '/puppies',
     '/payment-plans',
     '/guarantee',
     '/service',
@@ -37,7 +39,6 @@ export async function GET() {
     '/blog',
     '/know-your-pup',
     '/contact',
-    '/puppies',
     '/terms-conditions',
     '/privacy-policy',
     '/refund-policy',
@@ -47,19 +48,20 @@ export async function GET() {
     priority: path === '' ? 1.0 : 0.8,
   }));
   
-  // 2. Dynamic Pages for each available puppy
+  // 2. Dynamically create a URL for each available puppy
   const puppyPages = availablePups.map(pup => ({
     url: `${baseUrl}/puppies/${pup.slug}`,
     lastModified,
-    priority: 0.9, // Higher priority for pages that lead to a sale
+    priority: 0.9,
   }));
 
-  // Combine all URL sets
+  // 3. Combine all URLs
   const allUrls = [
     ...staticPages,
     ...puppyPages
   ];
 
+  // 4. Generate the XML and return it with the correct headers
   const body = generateSiteMap(allUrls);
 
   return new Response(body, {
