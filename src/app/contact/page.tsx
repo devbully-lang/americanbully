@@ -81,7 +81,7 @@ function ContactForm() {
         setStatus('error');
         setResponseMessage(data.error || 'An unexpected error occurred.');
       }
-    } catch (error) {
+    } catch (_error) { // THIS IS THE FIX: Changed 'error' to '_error'
       setStatus('error');
       setResponseMessage('Failed to send message. Please try again later.');
     }
