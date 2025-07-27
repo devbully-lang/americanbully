@@ -5,7 +5,7 @@ import Image from "next/image";
 // This uses an SVG for a clear image and the official Facebook blue for the background.
 const FacebookIcon = () => (
   <a 
-    href="https://facebook.com" // Replace with your actual Facebook page URL
+    href="https://www.facebook.com/share/1EnmybhPob/?mibextid=wwXIfr" // Replace with your actual Facebook page URL
     target="_blank" 
     rel="noopener noreferrer"
     aria-label="Follow us on Facebook"
