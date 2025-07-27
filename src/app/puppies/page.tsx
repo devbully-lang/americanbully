@@ -1,6 +1,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { availablePups } from '@/lib/puppyData'; // Import the puppy data
+import { availablePups } from '@/lib/puppyData';
+
+// New helper component for the status tag
+const StatusTag = ({ status }: { status: string }) => {
+  let bgColor = 'bg-gray-400'; // Default
+  if (status === 'Available') bgColor = 'bg-green-500';
+  if (status === 'Reserved') bgColor = 'bg-orange-500';
+  if (status === 'Sold') bgColor = 'bg-red-600';
+
+  return (
+    <div className={`absolute top-3 right-3 ${bgColor} text-white text-xs font-bold px-2 py-1 rounded-full`}>
+      {status.toUpperCase()}
+    </div>
+  );
+};
 
 export default function PuppiesPage() {
   return (
@@ -18,22 +32,17 @@ export default function PuppiesPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
               {availablePups.map((pup) => (
                 <div key={pup.name} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                  {/* Link now wraps the image and goes to the detail page */}
                   <Link href={`/puppies/${pup.slug}`}>
                     <div className="relative">
                       <Image src={pup.image} alt={pup.name} width={500} height={500} className="w-full h-80 object-cover" />
-                      {pup.status === 'Available' && (
-                         <div className="absolute top-3 right-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded-full">
-                           AVAILABLE
-                         </div>
-                      )}
+                      {/* Using the new StatusTag component */}
+                      <StatusTag status={pup.status} />
                     </div>
                   </Link>
                   <div className="p-6">
                     <h3 className="text-2xl font-bold mb-2">{pup.name}</h3>
                     <p className="text-xl font-semibold text-blue-600 mb-2">${pup.price.toLocaleString()}</p>
                     <p className="text-gray-600 mb-4">{pup.description}</p>
-                    {/* Link now goes to the detail page */}
                     <Link href={`/puppies/${pup.slug}`} className="font-bold text-blue-600 hover:text-blue-800">
                       View Details &rarr;
                     </Link>
@@ -47,4 +56,3 @@ export default function PuppiesPage() {
     </main>
   );
 }
-

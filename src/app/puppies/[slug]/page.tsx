@@ -1,15 +1,12 @@
 import { availablePups } from '@/lib/puppyData';
 import Image from 'next/image';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { InquiryButton } from '@/components/ui/InquiryButton'; // Import the new component
 
 export async function generateStaticParams() {
-  return availablePups.map((pup) => ({
-    slug: pup.slug,
-  }));
+  return availablePups.map((pup) => ({ slug: pup.slug }));
 }
 
-// THIS IS THE FIX: The component is now 'async' and correctly handles the 'params' promise.
 export default async function PuppyDetailPage(props: { params: Promise<{ slug: string }> }) {
   const { slug } = await props.params;
   const puppy = availablePups.find((p) => p.slug === slug);
@@ -18,13 +15,10 @@ export default async function PuppyDetailPage(props: { params: Promise<{ slug: s
     notFound();
   }
 
-  const isSoldOrReserved = puppy.status === 'Sold' || puppy.status === 'Reserved';
-
   return (
     <main className="bg-gray-50 py-20">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          
           <div>
             <Image 
               src={puppy.image} 
@@ -46,11 +40,9 @@ export default async function PuppyDetailPage(props: { params: Promise<{ slug: s
               ))}
             </div>
           </div>
-
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h1 className="text-4xl font-bold text-gray-900 mb-2">{puppy.name}</h1>
             <p className="text-3xl font-bold text-blue-600 mb-6">${puppy.price.toLocaleString()}</p>
-
             <div className="space-y-4 text-lg text-gray-700">
               <DetailRow label="Gender" value={puppy.gender} />
               <DetailRow label="Breed" value={puppy.breedType} />
@@ -63,19 +55,9 @@ export default async function PuppyDetailPage(props: { params: Promise<{ slug: s
               <DetailRow label="Vet Certificate" value={puppy.vetCertificate} />
               <DetailRow label="Training" value={puppy.training} />
             </div>
-
             <div className="mt-8">
-              <Link 
-                href={`/contact?subject=Inquiry about ${puppy.name}`}
-                className={`w-full text-center text-white font-bold text-xl py-4 px-8 rounded-md transition duration-300 block ${
-                  isSoldOrReserved
-                    ? 'bg-gray-400 cursor-not-allowed'
-                    : 'bg-green-600 hover:bg-green-700'
-                }`}
-                onClick={(e) => isSoldOrReserved && e.preventDefault()}
-              >
-                {isSoldOrReserved ? puppy.status.toUpperCase() : 'SEND INQUIRY'}
-              </Link>
+              {/* This now uses the safe Client Component */}
+              <InquiryButton puppyName={puppy.name} puppyStatus={puppy.status} />
             </div>
           </div>
         </div>
@@ -84,16 +66,11 @@ export default async function PuppyDetailPage(props: { params: Promise<{ slug: s
   );
 }
 
-// Helper component for displaying details neatly
 const DetailRow = ({ label, value, status }: { label: string, value: string, status?: string }) => {
   let statusColor = 'text-gray-800';
-  if (status === 'Available') {
-    statusColor = 'text-green-600 font-bold';
-  } else if (status === 'Reserved') {
-    statusColor = 'text-orange-500 font-bold';
-  } else if (status === 'Sold') {
-    statusColor = 'text-red-600 font-bold';
-  }
+  if (status === 'Available') statusColor = 'text-green-600 font-bold';
+  else if (status === 'Reserved') statusColor = 'text-orange-500 font-bold';
+  else if (status === 'Sold') statusColor = 'text-red-600 font-bold';
 
   return (
     <div className="flex justify-between border-b border-gray-200 py-2">
@@ -102,4 +79,3 @@ const DetailRow = ({ label, value, status }: { label: string, value: string, sta
     </div>
   );
 };
-
