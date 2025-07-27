@@ -102,3 +102,4 @@ const DetailRow = ({ label, value, status }: { label: string, value: string, sta
     </div>
   );
 };
+
