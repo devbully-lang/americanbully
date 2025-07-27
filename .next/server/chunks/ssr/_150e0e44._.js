@@ -184,15 +184,84 @@ __turbopack_context__.s({
 });
 const availablePups = [
     {
+        name: 'Luna',
+        slug: 'luna',
+        image: '/images/puppies/luna.jpg',
+        gallery: [
+            '/images/puppies/luna-1.jpg',
+            '/images/puppies/luna-2.jpg',
+            '/images/puppies/luna-3.jpg'
+        ],
+        price: 1200,
+        status: 'Available',
+        gender: 'Female',
+        breedType: 'American Bully',
+        registry: 'AKC',
+        hypoallergenic: 'yes',
+        vaccinations: 'Up to Date',
+        shipping: 'Available',
+        parentsOnSite: 'Champion Bloodline',
+        guarantee: '1 Year Genetic Health Guarantee',
+        vetCertificate: 'Veterinary Health Exam Certificate',
+        training: 'Crate Trained & Socialized',
+        description: 'Female. Cream-colored. Sweet temperament and great with children.'
+    },
+    {
+        name: 'Remus',
+        slug: 'remus',
+        image: '/images/puppies/remus.jpg',
+        gallery: [
+            '/images/puppies/remus-1.jpg',
+            '/images/puppies/remus-2.jpg',
+            '/images/puppies/remus-3.jpg'
+        ],
+        price: 1200,
+        status: 'Available',
+        gender: 'Male',
+        breedType: 'American Bully',
+        registry: 'AKC',
+        hypoallergenic: 'No',
+        vaccinations: 'Up to Date',
+        shipping: 'Available',
+        parentsOnSite: 'On Site and Well-Trained',
+        guarantee: '1 Year Health Guarantee',
+        vetCertificate: 'Veterinary Health Exam Certificate',
+        training: 'Basic Commands & Housebroken',
+        description: 'With loving heart and sweet nature, Remus is sure to steal your heart and you can’t even for a day regret having this wonderful pup 🐶'
+    },
+    {
+        name: 'Cookie',
+        slug: 'cookie',
+        image: '/images/puppies/cookie.jpg',
+        gallery: [
+            '/images/puppies/cookie-1.jpg',
+            '/images/puppies/cookie-2.jpg',
+            '/images/puppies/cookie-3.jpg'
+        ],
+        price: 1200,
+        status: 'Available',
+        gender: 'Female',
+        breedType: 'American Bully',
+        registry: 'CKC',
+        hypoallergenic: 'Yes',
+        vaccinations: 'Up to Date',
+        shipping: 'Available',
+        parentsOnSite: 'Both Parents DNA Tested',
+        guarantee: '1 Year Health Guarantee',
+        vetCertificate: 'Veterinary Health Exam Certificate',
+        training: 'Potty Trained & Leash Ready',
+        description: 'Humble puppy with a good personality doesn’t look for trouble and Always act as leader so adorable 🥹'
+    },
+    {
         name: 'Apollo',
         slug: 'apollo',
         image: '/images/puppies/apollo.jpg',
         gallery: [
-            '/images/puppies/apollo-1.png',
-            '/images/puppies/apollo-2.png',
-            '/images/puppies/apollo-3.png'
+            '/images/puppies/apollo-1.jpg',
+            '/images/puppies/apollo-2.jpg',
+            '/images/puppies/apollo-3.jpg'
         ],
-        price: 1500,
+        price: 1200,
         status: 'Available',
         gender: 'Male',
         breedType: 'American Bully',
@@ -204,76 +273,30 @@ const availablePups = [
         guarantee: '1 Year Genetic Health Guarantee',
         vetCertificate: 'Veterinary Health Exam Certificate',
         training: '100% Domesticated & Potty Trained',
-        description: 'Male. Blue tri-color. Confident and playful with a champion pedigree.'
+        description: 'Blue tri-color. Confident and playful with a champion pedigree. Loves cuddles and will melt your heart with his sweet, curious eyes'
     },
     {
-        name: 'Luna',
-        slug: 'luna',
-        image: '/images/puppies/luna.jpg',
+        name: 'Mark',
+        slug: 'mark',
+        image: '/images/puppies/mark.jpg',
         gallery: [
-            '/images/puppies/luna-1.jpg',
-            '/images/puppies/luna-2.jpg',
-            '/images/puppies/luna-3.jpg'
+            '/images/puppies/mark-1.jpg',
+            '/images/puppies/mark-2.jpg',
+            '/images/puppies/mark-3.jpg'
         ],
-        price: 1700,
-        status: 'Available',
-        gender: 'Female',
-        breedType: 'French Bulldog',
-        registry: 'AKC',
-        hypoallergenic: 'No',
-        vaccinations: 'Up to Date',
-        shipping: 'Available',
-        parentsOnSite: 'Champion Bloodline',
-        guarantee: '1 Year Genetic Health Guarantee',
-        vetCertificate: 'Veterinary Health Exam Certificate',
-        training: 'Crate Trained & Socialized',
-        description: 'Female. Cream-colored. Sweet temperament and great with children.'
-    },
-    {
-        name: 'Rocky',
-        slug: 'rocky',
-        image: '/images/puppies/rocky.jpg',
-        gallery: [
-            '/images/puppies/rocky-1.jpg',
-            '/images/puppies/rocky-2.jpg',
-            '/images/puppies/rocky-3.jpg'
-        ],
-        price: 1300,
+        price: 1200,
         status: 'Available',
         gender: 'Male',
-        breedType: 'Golden Retriever',
-        registry: 'AKC',
-        hypoallergenic: 'No',
-        vaccinations: 'Up to Date',
-        shipping: 'Available',
-        parentsOnSite: 'On Site and Well-Trained',
-        guarantee: '2 Year Health Guarantee',
-        vetCertificate: 'Veterinary Health Exam Certificate',
-        training: 'Basic Commands & Housebroken',
-        description: 'Male. Golden coat. Friendly, smart, and eager to please.'
-    },
-    {
-        name: 'Bella',
-        slug: 'bella',
-        image: '/images/puppies/bella.jpg',
-        gallery: [
-            '/images/puppies/bella-1.jpg',
-            '/images/puppies/bella-2.jpg',
-            '/images/puppies/bella-3.jpg'
-        ],
-        price: 1600,
-        status: 'Available',
-        gender: 'Female',
-        breedType: 'Poodle',
-        registry: 'CKC',
+        breedType: 'American Bully',
+        registry: 'ABKC',
         hypoallergenic: 'Yes',
         vaccinations: 'Up to Date',
         shipping: 'Available',
-        parentsOnSite: 'Both Parents DNA Tested',
-        guarantee: '1 Year Health Guarantee',
+        parentsOnSite: 'Healthy and Vaccinated',
+        guarantee: '1 Year Genetic Health Guarantee',
         vetCertificate: 'Veterinary Health Exam Certificate',
-        training: 'Potty Trained & Leash Ready',
-        description: 'Female. Apricot mini poodle. Energetic and affectionate with a soft curly coat.'
+        training: '100% Domesticated & Potty Trained',
+        description: 'Very loving 🥰 plays a lot and very eager to make new friends along the way.'
     }
 ];
 }}),
