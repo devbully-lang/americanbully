@@ -14,7 +14,7 @@ export const availablePups = [
       '/images/puppies/rico-3.jpg',
     ],
     price: 1200,
-    status: 'Available', 
+    status: 'Reserved', 
     gender: 'Male',
     breedType: 'American Bully',
     registry: 'ABKC',
