@@ -35,9 +35,12 @@ export default function PaymentPlansPage() {
           <motion.div variants={cardVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="p-8 bg-white rounded-lg shadow-lg border border-black/10">
             <h2 className="text-2xl font-bold mb-2" style={{ color: 'rgb(var(--primary))' }}>Accepted Payment Methods</h2>
             <ul className="list-disc list-inside text-gray-600 space-y-1">
+                <li>Chime</li>
+                <li>Apple Pay</li>
+                <li>Gift Cards</li>
+                <li>Pay Pal</li>
                 <li>Zelle</li>
-                <li>Bank Wire Transfer</li>
-                <li>Cash (for local pickups only)</li>
+                <li>Moneygram</li>
             </ul>
           </motion.div>
 
