@@ -9,8 +9,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function PuppyDetailPage({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+// THIS IS THE FIX: The component is now 'async' and correctly handles the 'params' promise.
+export default async function PuppyDetailPage(props: { params: Promise<{ slug: string }> }) {
+  const { slug } = await props.params;
   const puppy = availablePups.find((p) => p.slug === slug);
 
   if (!puppy) {
@@ -53,7 +54,6 @@ export default function PuppyDetailPage({ params }: { params: { slug: string } }
             <div className="space-y-4 text-lg text-gray-700">
               <DetailRow label="Gender" value={puppy.gender} />
               <DetailRow label="Breed" value={puppy.breedType} />
-              {/* FIX: The status is now passed directly to the DetailRow component */}
               <DetailRow label="Status" value={puppy.status} status={puppy.status} />
               <DetailRow label="Registry" value={puppy.registry} />
               <DetailRow label="Vaccinations" value={puppy.vaccinations} />
@@ -65,7 +65,6 @@ export default function PuppyDetailPage({ params }: { params: { slug: string } }
             </div>
 
             <div className="mt-8">
-              {/* FIX: Button is now smarter and changes based on status */}
               <Link 
                 href={`/contact?subject=Inquiry about ${puppy.name}`}
                 className={`w-full text-center text-white font-bold text-xl py-4 px-8 rounded-md transition duration-300 block ${
@@ -73,7 +72,6 @@ export default function PuppyDetailPage({ params }: { params: { slug: string } }
                     ? 'bg-gray-400 cursor-not-allowed'
                     : 'bg-green-600 hover:bg-green-700'
                 }`}
-                // Prevents clicking if the puppy is not available
                 onClick={(e) => isSoldOrReserved && e.preventDefault()}
               >
                 {isSoldOrReserved ? puppy.status.toUpperCase() : 'SEND INQUIRY'}
@@ -86,9 +84,9 @@ export default function PuppyDetailPage({ params }: { params: { slug: string } }
   );
 }
 
-// Helper component for displaying details neatly (NOW WITH DYNAMIC STATUS)
+// Helper component for displaying details neatly
 const DetailRow = ({ label, value, status }: { label: string, value: string, status?: string }) => {
-  let statusColor = 'text-gray-800'; // Default color
+  let statusColor = 'text-gray-800';
   if (status === 'Available') {
     statusColor = 'text-green-600 font-bold';
   } else if (status === 'Reserved') {
@@ -100,7 +98,6 @@ const DetailRow = ({ label, value, status }: { label: string, value: string, sta
   return (
     <div className="flex justify-between border-b border-gray-200 py-2">
       <span className="font-semibold text-gray-600">{label}:</span>
-      {/* FIX: The class is now chosen based on the status prop */}
       <span className={status ? statusColor : 'text-gray-800'}>{value}</span>
     </div>
   );
