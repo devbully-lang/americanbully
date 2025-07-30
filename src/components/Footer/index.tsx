@@ -75,7 +75,7 @@ const Footer = () => {
 
           <div className="space-y-4">
             <h3 className="text-lg font-bold" style={{ color: 'rgb(var(--accent))' }}>Contact</h3>
-            <p className="opacity-80">Waco Texas, USA</p>
+            <p className="opacity-80">USA</p>
             <p className="opacity-80">Email: contact@601bullies.com</p>
 
           </div>
