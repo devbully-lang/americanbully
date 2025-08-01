@@ -5,6 +5,30 @@
 export const availablePups = [
 
   { 
+    name: 'Daisy',
+    slug: 'daisy',
+    image: '/images/puppies/daisy.jpg',
+    gallery: [
+      '/images/puppies/daisy-1.jpg',
+      '/images/puppies/daisy-2.jpg',
+      '/images/puppies/daisy-3.jpg',
+    ],
+    price: 1200,
+    status: 'Available', 
+    gender: 'Male',
+    breedType: 'American Bully',
+    registry: 'ABKC',
+    hypoallergenic: 'Yes',
+    vaccinations: 'Up to Date',
+    shipping: 'Available',
+    parentsOnSite: 'Healthy and Vaccinated',
+    guarantee: '1 Year Genetic Health Guarantee',
+    vetCertificate: 'Veterinary Health Exam Certificate',
+    training: '100% Domesticated & Potty Trained',
+    description: 'Radiates pure cuteness and love, your heart wont stand a chance.'
+  },
+
+  { 
     name: 'Rocky',
     slug: 'rocky',
     image: '/images/puppies/rocky.jpg',
