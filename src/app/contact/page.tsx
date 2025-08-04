@@ -151,7 +151,7 @@ function ContactForm() {
           >
             <div className="bg-white p-8 rounded-lg shadow-lg border border-black/10">
                 <h3 className="text-xl font-bold mb-4" style={{ color: 'rgb(var(--secondary))' }}>Our Location</h3>
-                <p className="text-gray-600">Waco Texas, USA<br/>*Visits by appointment only*</p>
+                <p className="text-gray-600">USA<br/>*Visits by appointment only*</p>
             </div>
             <div className="bg-white p-8 rounded-lg shadow-lg border border-black/10">
                 <h3 className="text-xl font-bold mb-4" style={{ color: 'rgb(var(--secondary))' }}>Contact Details</h3>
