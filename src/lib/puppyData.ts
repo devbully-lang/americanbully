@@ -86,7 +86,7 @@ export const availablePups = [
     ],
     price: 1200,
     status: 'Available',
-    gender: 'Male',
+    gender: 'Female',
     breedType: 'American Bully',
     registry: 'AKC',
     hypoallergenic: 'No',
