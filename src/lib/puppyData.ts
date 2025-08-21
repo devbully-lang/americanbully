@@ -51,53 +51,6 @@ export const availablePups = [
     training: '100% Domesticated & Potty Trained',
     description: 'This puppy shows true love!! Always spreading positivity and happiness where ever he goes'
   },
-
-  { 
-    name: 'Rico',
-    slug: 'rico',
-    image: '/images/puppies/rico.jpg',
-    gallery: [
-      '/images/puppies/rico-1.jpg',
-      '/images/puppies/rico-2.jpg',
-      '/images/puppies/rico-3.jpg',
-    ],
-    price: 1200,
-    status: 'Available', 
-    gender: 'Male',
-    breedType: 'American Bully',
-    registry: 'ABKC',
-    hypoallergenic: 'Yes',
-    vaccinations: 'Up to Date',
-    shipping: 'Available',
-    parentsOnSite: 'Healthy and Vaccinated',
-    guarantee: '1 Year Genetic Health Guarantee',
-    vetCertificate: 'Veterinary Health Exam Certificate',
-    training: '100% Domesticated & Potty Trained',
-    description: 'This little furball is absolutely adorable! The cutest thing Ive seen all day! 🐶❤️'
-  },
-  { 
-    name: 'Tedy',
-    slug: 'tedy',
-    image: '/images/puppies/tedy.jpg',
-    gallery: [
-      '/images/puppies/tedy-1.jpg',
-      '/images/puppies/tedy-2.jpg',
-      '/images/puppies/tedy-3.jpg',
-    ],
-    price: 1200,
-    status: 'Available', 
-    gender: 'Female',
-    breedType: 'American Bully',
-    registry: 'ABKC',
-    hypoallergenic: 'Yes',
-    vaccinations: 'Up to Date',
-    shipping: 'Available',
-    parentsOnSite: 'Healthy and Vaccinated',
-    guarantee: '1 Year Genetic Health Guarantee',
-    vetCertificate: 'Veterinary Health Exam Certificate',
-    training: '100% Domesticated & Potty Trained',
-    description: 'Youre bringing so much joy with your puppy eyes and fluffy fur! Cant get enough of this cuteness! 🐶😍'
-  },
   
   {
     name: 'Luna',
