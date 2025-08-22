@@ -168,6 +168,30 @@ export const availablePups = [
     training: '100% Domesticated & Potty Trained',
     description: 'Very loving 🥰 plays a lot and very eager to make new friends along the way.'
   },
+
+  { 
+    name: 'Milo',
+    slug: 'milo',
+    image: '/images/puppies/milo.jpg',
+    gallery: [
+      '/images/puppies/milo-1.jpg',
+      '/images/puppies/milo-2.jpg',
+      '/images/puppies/milo-3.jpg',
+    ],
+    price: 1200,
+    status: 'Available', 
+    gender: 'Male',
+    breedType: 'American Bully',
+    registry: 'ABKC',
+    hypoallergenic: 'Yes',
+    vaccinations: 'Up to Date',
+    shipping: 'Available',
+    parentsOnSite: 'Healthy and Vaccinated',
+    guarantee: '1 Year Genetic Health Guarantee',
+    vetCertificate: 'Veterinary Health Exam Certificate',
+    training: '100% Domesticated & Potty Trained',
+    description: 'He is a cute guy with lots of energy and loves to be around people.'
+  },
   
 
 ];
