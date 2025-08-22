@@ -131,7 +131,7 @@ export const availablePups = [
       '/images/puppies/apollo-3.jpg',
     ],
     price: 1200,
-    status: 'Available', 
+    status: 'Reserved', 
     gender: 'Male',
     breedType: 'American Bully',
     registry: 'ABKC',
