@@ -108,7 +108,7 @@ export const availablePups = [
       '/images/puppies/cookie-3.jpg',
     ],
     price: 1200,
-    status: 'Available',
+    status: 'Reserved',
     gender: 'Female',
     breedType: 'American Bully',
     registry: 'CKC',
