@@ -3,7 +3,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import Image from 'next/image';
 import { reviewsData, Review } from '@/lib/reviewsData'; // Make sure this path is correct
-import { Star, StarHalf, CheckCircle, ChevronDown, SlidersHorizontal, X } from 'lucide-react';
+// ✅ FIX 1: Removed unused 'ChevronDown' import
+import { Star, StarHalf, CheckCircle, SlidersHorizontal, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { formatDistanceToNow } from 'date-fns';
 
@@ -32,7 +33,7 @@ const StarRating = ({ rating, className = '' }: { rating: number; className?: st
 const GoogleIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 48 48"><path fill="#fbc02d" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"></path><path fill="#e53935" d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691z"></path><path fill="#4caf50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.618-3.354-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"></path><path fill="#1565c0" d="M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C44.434 36.338 48 30.656 48 24c0-1.341-.138-2.65-.389-3.917z"></path></svg>;
 const TrustpilotIcon = () => (
     <div className="flex items-center gap-1.5">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="#00b67a"><path d="M12 2.5l-2.5 5h-5.5l4.5 3.5-1.5 5.5 4-3.5 4 3.5-1.5-5.5 4.5-3.5h-5.5z"/></svg>
+        <svg xmlns="http://www.w.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="#00b67a"><path d="M12 2.5l-2.5 5h-5.5l4.5 3.5-1.5 5.5 4-3.5 4 3.5-1.5-5.5 4.5-3.5h-5.5z"/></svg>
         <span className="font-bold text-lg text-gray-700">Trustpilot</span>
     </div>
 );
@@ -91,8 +92,22 @@ const ReviewCard = ({ review }: { review: Review }) => (
 // Dynamically get all unique years from the data for the year filter
 const availableYears = [...new Set(reviewsData.map(r => new Date(r.date).getFullYear()))].sort((a, b) => b - a);
 
-// ✅ NEW: Mobile Filter Drawer Component
-const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters }: any) => {
+// ✅ FIX 2: Defined specific types for component props to replace 'any'
+type FilterState = {
+    rating: number | 'all' | 'below-4';
+    platform: 'all' | 'Google' | 'Trustpilot';
+    sort: 'newest' | 'oldest' | 'highest' | 'lowest';
+    year: 'all' | number;
+};
+
+type MobileFilterDrawerProps = {
+    isOpen: boolean;
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    filters: FilterState;
+    setFilters: React.Dispatch<React.SetStateAction<FilterState>>;
+};
+
+const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters }: MobileFilterDrawerProps) => {
     
     useEffect(() => {
         if (isOpen) {
@@ -141,7 +156,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters }: any) => 
                             <div>
                                 <h4 className="font-semibold mb-3">Sort by</h4>
                                 <div className="grid grid-cols-2 gap-2">
-                                    {['newest', 'oldest', 'highest', 'lowest'].map(sort => (
+                                    {(['newest', 'oldest', 'highest', 'lowest'] as const).map(sort => (
                                         <button key={sort} onClick={() => setFilters({...filters, sort})} className={`p-3 text-sm rounded-lg capitalize text-left ${filters.sort === sort ? 'bg-primary text-white' : 'bg-white border'}`}>{sort}</button>
                                     ))}
                                 </div>
@@ -191,11 +206,11 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters }: any) => 
 
 // --- Main Page Component ---
 export default function ReviewsPage() {
-    const [filters, setFilters] = useState({
-        rating: 'all' as number | 'all' | 'below-4',
-        platform: 'all' as 'all' | 'Google' | 'Trustpilot',
-        sort: 'newest' as 'newest' | 'oldest' | 'highest' | 'lowest',
-        year: 'all' as 'all' | number,
+    const [filters, setFilters] = useState<FilterState>({
+        rating: 'all',
+        platform: 'all',
+        sort: 'newest',
+        year: 'all',
     });
     const [visibleCount, setVisibleCount] = useState(9);
     const [isFilterOpen, setIsFilterOpen] = useState(false); // State for mobile drawer
@@ -249,7 +264,8 @@ export default function ReviewsPage() {
                     <div className="text-center mb-12 sm:mb-16">
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">Trusted by Families, Loved by Pups</h1>
                         <p className="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto">
-                            We're proud of the homes our puppies go to. See what our families have to say about their experience.
+                            {/* ✅ FIX 3: Escaped the apostrophe */}
+                            We&apos;re proud of the homes our puppies go to. See what our families have to say about their experience.
                         </p>
                     </div>
 
@@ -275,7 +291,8 @@ export default function ReviewsPage() {
                                     <option value="all">All Years</option>
                                     {availableYears.map(year => <option key={year} value={year}>{year}</option>)}
                                 </select>
-                                <select onChange={(e) => setFilters({...filters, sort: e.target.value as any})} value={filters.sort} className="appearance-none bg-slate-100 border border-slate-200 rounded-full pl-4 pr-8 py-2 text-sm font-semibold cursor-pointer">
+                                {/* ✅ FIX 4: Replaced 'any' with a proper type assertion */}
+                                <select onChange={(e) => setFilters({...filters, sort: e.target.value as FilterState['sort']})} value={filters.sort} className="appearance-none bg-slate-100 border border-slate-200 rounded-full pl-4 pr-8 py-2 text-sm font-semibold cursor-pointer">
                                     <option value="newest">Sort by: Newest</option>
                                     <option value="oldest">Sort by: Oldest</option>
                                     <option value="highest">Sort by: Highest Rating</option>

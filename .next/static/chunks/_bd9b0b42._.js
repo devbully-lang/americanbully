@@ -708,6 +708,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$reviewsData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/reviewsData.ts [app-client] (ecmascript)"); // Make sure this path is correct
+// ✅ FIX 1: Removed unused 'ChevronDown' import
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2d$half$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__StarHalf$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/star-half.js [app-client] (ecmascript) <export default as StarHalf>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2d$big$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/circle-check-big.js [app-client] (ecmascript) <export default as CheckCircle>");
@@ -740,7 +741,7 @@ const StarRating = ({ rating, className = '' })=>{
                     fill: "currentColor"
                 }, i, false, {
                     fileName: "[project]/src/app/testimonials/page.tsx",
-                    lineNumber: 19,
+                    lineNumber: 20,
                     columnNumber: 28
                 }, this);
             }
@@ -750,7 +751,7 @@ const StarRating = ({ rating, className = '' })=>{
                     fill: "currentColor"
                 }, i, false, {
                     fileName: "[project]/src/app/testimonials/page.tsx",
-                    lineNumber: 22,
+                    lineNumber: 23,
                     columnNumber: 28
                 }, this);
             }
@@ -759,13 +760,13 @@ const StarRating = ({ rating, className = '' })=>{
                 fill: "currentColor"
             }, i, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 24,
+                lineNumber: 25,
                 columnNumber: 24
             }, this);
         })
     }, void 0, false, {
         fileName: "[project]/src/app/testimonials/page.tsx",
-        lineNumber: 16,
+        lineNumber: 17,
         columnNumber: 9
     }, this);
 };
@@ -781,7 +782,7 @@ const GoogleIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proj
                 d: "M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8c-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C12.955 4 4 12.955 4 24s8.955 20 20 20s20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 106
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -789,7 +790,7 @@ const GoogleIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proj
                 d: "M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4C16.318 4 9.656 8.337 6.306 14.691z"
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 393
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -797,7 +798,7 @@ const GoogleIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proj
                 d: "M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238C29.211 35.091 26.715 36 24 36c-5.222 0-9.618-3.354-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 587
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -805,13 +806,13 @@ const GoogleIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$proj
                 d: "M43.611 20.083H42V20H24v8h11.303c-.792 2.237-2.231 4.166-4.087 5.571l6.19 5.238C44.434 36.338 48 30.656 48 24c0-1.341-.138-2.65-.389-3.917z"
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 32,
+                lineNumber: 33,
                 columnNumber: 777
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/testimonials/page.tsx",
-        lineNumber: 32,
+        lineNumber: 33,
         columnNumber: 26
     }, this);
 _c1 = GoogleIcon;
@@ -819,7 +820,7 @@ const TrustpilotIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$
         className: "flex items-center gap-1.5",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                xmlns: "http://www.w3.org/2000/svg",
+                xmlns: "http://www.w.org/2000/svg",
                 className: "h-5 w-5",
                 viewBox: "0 0 24 24",
                 fill: "#00b67a",
@@ -827,12 +828,12 @@ const TrustpilotIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$
                     d: "M12 2.5l-2.5 5h-5.5l4.5 3.5-1.5 5.5 4-3.5 4 3.5-1.5-5.5 4.5-3.5h-5.5z"
                 }, void 0, false, {
                     fileName: "[project]/src/app/testimonials/page.tsx",
-                    lineNumber: 35,
-                    columnNumber: 104
+                    lineNumber: 36,
+                    columnNumber: 103
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 35,
+                lineNumber: 36,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -840,13 +841,13 @@ const TrustpilotIcon = ()=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$
                 children: "Trustpilot"
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 36,
+                lineNumber: 37,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/testimonials/page.tsx",
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 _c2 = TrustpilotIcon;
@@ -859,11 +860,11 @@ const SummaryCard = ({ platform, rating, reviewCount })=>/*#__PURE__*/ (0, __TUR
                 children: [
                     platform === 'Google' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GoogleIcon, {}, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 38
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(TrustpilotIcon, {}, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 45,
+                        lineNumber: 46,
                         columnNumber: 55
                     }, this),
                     platform === 'Google' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -871,13 +872,13 @@ const SummaryCard = ({ platform, rating, reviewCount })=>/*#__PURE__*/ (0, __TUR
                         children: "Google"
                     }, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 46,
+                        lineNumber: 47,
                         columnNumber: 40
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 44,
+                lineNumber: 45,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -888,7 +889,7 @@ const SummaryCard = ({ platform, rating, reviewCount })=>/*#__PURE__*/ (0, __TUR
                         children: rating.toFixed(1)
                     }, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 49,
+                        lineNumber: 50,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -898,7 +899,7 @@ const SummaryCard = ({ platform, rating, reviewCount })=>/*#__PURE__*/ (0, __TUR
                                 rating: rating
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 51,
+                                lineNumber: 52,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -910,25 +911,25 @@ const SummaryCard = ({ platform, rating, reviewCount })=>/*#__PURE__*/ (0, __TUR
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 52,
+                                lineNumber: 53,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 50,
+                        lineNumber: 51,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 48,
+                lineNumber: 49,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/testimonials/page.tsx",
-        lineNumber: 43,
+        lineNumber: 44,
         columnNumber: 5
     }, this);
 _c3 = SummaryCard;
@@ -967,7 +968,7 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                                 className: "rounded-full"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 70,
+                                lineNumber: 71,
                                 columnNumber: 17
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -977,7 +978,7 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                                         children: review.author
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 73,
                                         columnNumber: 21
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -987,24 +988,24 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 73,
+                                        lineNumber: 74,
                                         columnNumber: 21
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 71,
+                                lineNumber: 72,
                                 columnNumber: 17
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 69,
+                        lineNumber: 70,
                         columnNumber: 13
                     }, this),
                     review.platform === 'Google' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(GoogleIcon, {}, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 78,
+                        lineNumber: 79,
                         columnNumber: 45
                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                         xmlns: "http://www.w3.org/2000/svg",
@@ -1015,25 +1016,25 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                             d: "M12 2.5l-2.5 5h-5.5l4.5 3.5-1.5 5.5 4-3.5 4 3.5-1.5-5.5 4.5-3.5h-5.5z"
                         }, void 0, false, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 78,
+                            lineNumber: 79,
                             columnNumber: 157
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 78,
+                        lineNumber: 79,
                         columnNumber: 62
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 68,
+                lineNumber: 69,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(StarRating, {
                 rating: review.rating
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 80,
+                lineNumber: 81,
                 columnNumber: 9
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1041,7 +1042,7 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                 children: review.content
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 81,
+                lineNumber: 82,
                 columnNumber: 9
             }, this),
             review.platform === 'Trustpilot' && review.verified && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1051,7 +1052,7 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                         size: 16
                     }, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 84,
+                        lineNumber: 85,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1059,19 +1060,19 @@ const ReviewCard = ({ review })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module
                         children: "Verified"
                     }, void 0, false, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 85,
+                        lineNumber: 86,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 83,
+                lineNumber: 84,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/app/testimonials/page.tsx",
-        lineNumber: 60,
+        lineNumber: 61,
         columnNumber: 5
     }, this);
 _c4 = ReviewCard;
@@ -1079,7 +1080,6 @@ _c4 = ReviewCard;
 const availableYears = [
     ...new Set(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$reviewsData$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["reviewsData"].map((r)=>new Date(r.date).getFullYear()))
 ].sort((a, b)=>b - a);
-// ✅ NEW: Mobile Filter Drawer Component
 const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
     _s();
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
@@ -1146,7 +1146,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                 children: "Filter & Sort"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 135,
+                                lineNumber: 150,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1155,18 +1155,18 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                     size: 24
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 136,
+                                    lineNumber: 151,
                                     columnNumber: 70
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 136,
+                                lineNumber: 151,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 134,
+                        lineNumber: 149,
                         columnNumber: 25
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1179,7 +1179,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                         children: "Sort by"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 142,
+                                        lineNumber: 157,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1198,18 +1198,18 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: sort
                                             }, sort, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 160,
                                                 columnNumber: 41
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 143,
+                                        lineNumber: 158,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 141,
+                                lineNumber: 156,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1219,7 +1219,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                         children: "Rating"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 166,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1234,7 +1234,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "All Ratings"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 153,
+                                                lineNumber: 168,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1246,7 +1246,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "5 Stars"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 154,
+                                                lineNumber: 169,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1258,7 +1258,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "4 Stars"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 155,
+                                                lineNumber: 170,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1270,19 +1270,19 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "3 & Below"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 156,
+                                                lineNumber: 171,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 167,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 150,
+                                lineNumber: 165,
                                 columnNumber: 30
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1292,7 +1292,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                         children: "Platform"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 161,
+                                        lineNumber: 176,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1307,7 +1307,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "All Platforms"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 163,
+                                                lineNumber: 178,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1319,7 +1319,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "Google"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 164,
+                                                lineNumber: 179,
                                                 columnNumber: 37
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1331,19 +1331,19 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "Trustpilot"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 165,
+                                                lineNumber: 180,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 162,
+                                        lineNumber: 177,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 160,
+                                lineNumber: 175,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1353,7 +1353,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                         children: "Year"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 185,
                                         columnNumber: 33
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1368,7 +1368,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                 children: "All"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 172,
+                                                lineNumber: 187,
                                                 columnNumber: 37
                                             }, this),
                                             availableYears.map((year)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1380,25 +1380,25 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                                     children: year
                                                 }, year, false, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 174,
+                                                    lineNumber: 189,
                                                     columnNumber: 42
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 171,
+                                        lineNumber: 186,
                                         columnNumber: 33
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 169,
+                                lineNumber: 184,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 139,
+                        lineNumber: 154,
                         columnNumber: 25
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1410,7 +1410,7 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                 children: "Clear All"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 181,
+                                lineNumber: 196,
                                 columnNumber: 29
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1419,29 +1419,29 @@ const MobileFilterDrawer = ({ isOpen, setIsOpen, filters, setFilters })=>{
                                 children: "Show Results"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 182,
+                                lineNumber: 197,
                                 columnNumber: 29
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/app/testimonials/page.tsx",
-                        lineNumber: 180,
+                        lineNumber: 195,
                         columnNumber: 25
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 126,
+                lineNumber: 141,
                 columnNumber: 21
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/testimonials/page.tsx",
-            lineNumber: 119,
+            lineNumber: 134,
             columnNumber: 17
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/testimonials/page.tsx",
-        lineNumber: 117,
+        lineNumber: 132,
         columnNumber: 9
     }, this);
 };
@@ -1520,7 +1520,7 @@ function ReviewsPage() {
                 setFilters: setFilters
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 246,
+                lineNumber: 261,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -1536,7 +1536,7 @@ function ReviewsPage() {
                                     children: "Trusted by Families, Loved by Pups"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 250,
+                                    lineNumber: 265,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1544,13 +1544,13 @@ function ReviewsPage() {
                                     children: "We're proud of the homes our puppies go to. See what our families have to say about their experience."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 266,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 249,
+                            lineNumber: 264,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1562,7 +1562,7 @@ function ReviewsPage() {
                                     reviewCount: googleStats.count
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 257,
+                                    lineNumber: 273,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SummaryCard, {
@@ -1571,13 +1571,13 @@ function ReviewsPage() {
                                     reviewCount: trustpilotStats.count
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 258,
+                                    lineNumber: 274,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 256,
+                            lineNumber: 272,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1594,7 +1594,7 @@ function ReviewsPage() {
                                                     children: "Filter by:"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 267,
+                                                    lineNumber: 283,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1606,7 +1606,7 @@ function ReviewsPage() {
                                                     children: "All Ratings"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 268,
+                                                    lineNumber: 284,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1621,13 +1621,13 @@ function ReviewsPage() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 269,
+                                                            lineNumber: 285,
                                                             columnNumber: 261
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 269,
+                                                    lineNumber: 285,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1642,13 +1642,13 @@ function ReviewsPage() {
                                                             size: 14
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 270,
+                                                            lineNumber: 286,
                                                             columnNumber: 261
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 270,
+                                                    lineNumber: 286,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1660,13 +1660,13 @@ function ReviewsPage() {
                                                     children: "3 & Below"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 271,
+                                                    lineNumber: 287,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                            lineNumber: 266,
+                                            lineNumber: 282,
                                             columnNumber: 28
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1685,7 +1685,7 @@ function ReviewsPage() {
                                                             children: "All Years"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 275,
+                                                            lineNumber: 291,
                                                             columnNumber: 37
                                                         }, this),
                                                         availableYears.map((year)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1693,13 +1693,13 @@ function ReviewsPage() {
                                                                 children: year
                                                             }, year, false, {
                                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                                lineNumber: 276,
+                                                                lineNumber: 292,
                                                                 columnNumber: 65
                                                             }, this))
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 274,
+                                                    lineNumber: 290,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1715,7 +1715,7 @@ function ReviewsPage() {
                                                             children: "Sort by: Newest"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 279,
+                                                            lineNumber: 296,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1723,7 +1723,7 @@ function ReviewsPage() {
                                                             children: "Sort by: Oldest"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 280,
+                                                            lineNumber: 297,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1731,7 +1731,7 @@ function ReviewsPage() {
                                                             children: "Sort by: Highest Rating"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 281,
+                                                            lineNumber: 298,
                                                             columnNumber: 37
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1739,25 +1739,25 @@ function ReviewsPage() {
                                                             children: "Sort by: Lowest Rating"
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                                            lineNumber: 282,
+                                                            lineNumber: 299,
                                                             columnNumber: 37
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                                    lineNumber: 278,
+                                                    lineNumber: 295,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/testimonials/page.tsx",
-                                            lineNumber: 273,
+                                            lineNumber: 289,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 264,
+                                    lineNumber: 280,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1770,25 +1770,25 @@ function ReviewsPage() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                                lineNumber: 292,
+                                                lineNumber: 309,
                                                 columnNumber: 33
                                             }, this),
                                             "Filter & Sort"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 288,
+                                        lineNumber: 305,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 287,
+                                    lineNumber: 304,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 262,
+                            lineNumber: 278,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1799,17 +1799,17 @@ function ReviewsPage() {
                                         review: review
                                     }, review.id, false, {
                                         fileName: "[project]/src/app/testimonials/page.tsx",
-                                        lineNumber: 301,
+                                        lineNumber: 318,
                                         columnNumber: 33
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 299,
+                                lineNumber: 316,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 298,
+                            lineNumber: 315,
                             columnNumber: 21
                         }, this),
                         visibleCount < filteredAndSortedReviews.length && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1823,12 +1823,12 @@ function ReviewsPage() {
                                 children: "Load More Reviews"
                             }, void 0, false, {
                                 fileName: "[project]/src/app/testimonials/page.tsx",
-                                lineNumber: 308,
+                                lineNumber: 325,
                                 columnNumber: 29
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 307,
+                            lineNumber: 324,
                             columnNumber: 25
                         }, this),
                         filteredAndSortedReviews.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1839,37 +1839,37 @@ function ReviewsPage() {
                                     children: "No reviews match your filters."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 319,
+                                    lineNumber: 336,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: "Try selecting a different category or clearing your filters."
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/testimonials/page.tsx",
-                                    lineNumber: 320,
+                                    lineNumber: 337,
                                     columnNumber: 29
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/testimonials/page.tsx",
-                            lineNumber: 318,
+                            lineNumber: 335,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/testimonials/page.tsx",
-                    lineNumber: 248,
+                    lineNumber: 263,
                     columnNumber: 17
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/testimonials/page.tsx",
-                lineNumber: 247,
+                lineNumber: 262,
                 columnNumber: 13
             }, this)
         ]
     }, void 0, true);
 }
-_s1(ReviewsPage, "/gHElKmaAb+W3MAwnh37mh/QPhA=");
+_s1(ReviewsPage, "YSVPh+T5UXrh2mwNgdu/uD7EEwM=");
 _c6 = ReviewsPage;
 var _c, _c1, _c2, _c3, _c4, _c5, _c6;
 __turbopack_context__.k.register(_c, "StarRating");
