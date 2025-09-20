@@ -20,7 +20,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 ;
 ;
-// --- Manage your slideshow images here ---
+// --- Slideshow Images ---
 const heroImages = [
     '/images/hero/baby.png',
     '/images/hero/pup.png',
@@ -31,7 +31,7 @@ const Hero = ()=>{
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         const timer = setTimeout(()=>{
             setCurrentImageIndex((prevIndex)=>(prevIndex + 1) % heroImages.length);
-        }, 5000); // Change image every 5 seconds
+        }, 5000);
         return ()=>clearTimeout(timer);
     }, [
         currentImageIndex
@@ -51,13 +51,9 @@ const Hero = ()=>{
                         opacity: 0
                     },
                     transition: {
-                        duration: 2,
-                        ease: 'easeInOut'
+                        duration: 2
                     },
-                    className: "absolute inset-0",
-                    style: {
-                        zIndex: -1
-                    },
+                    className: "absolute inset-0 z-0",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         src: heroImages[currentImageIndex],
                         alt: `Hero background slide ${currentImageIndex + 1}`,
@@ -66,7 +62,7 @@ const Hero = ()=>{
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/Hero.tsx",
-                        lineNumber: 37,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, this)
                 }, currentImageIndex, false, {
@@ -80,9 +76,15 @@ const Hero = ()=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "relative z-10 flex flex-col items-center justify-center h-full text-center px-4 bg-black/40",
+                className: "absolute inset-0 bg-black/40 z-10"
+            }, void 0, false, {
+                fileName: "[project]/src/components/sections/Hero.tsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-20 flex flex-col items-center justify-center h-full text-center px-4",
                 children: [
-                    " ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].h1, {
                         initial: {
                             opacity: 0,
@@ -119,12 +121,12 @@ const Hero = ()=>{
                         },
                         className: "mt-4 text-lg md:text-xl font-light max-w-2xl",
                         style: {
-                            textShadow: '1px 1px 4px rgba(0,0,0,0.7)'
+                            textShadow: '1px 1px 4px rgba(0,0,0,0.6)'
                         },
                         children: "Built Strong. Raised Right."
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/Hero.tsx",
-                        lineNumber: 60,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -142,19 +144,16 @@ const Hero = ()=>{
                         },
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                             href: "/puppies",
-                            className: "inline-block mt-8 bg-white font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-200 transition duration-300 shadow-lg",
-                            style: {
-                                color: 'rgb(var(--primary))'
-                            },
+                            className: "inline-block mt-8 bg-green-600 text-white font-bold py-3 px-8 text-lg rounded-full shadow-xl hover:bg-green-700 transition duration-300",
                             children: "View Our Puppies"
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/Hero.tsx",
-                            lineNumber: 74,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/Hero.tsx",
-                        lineNumber: 69,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, this)
                 ]
