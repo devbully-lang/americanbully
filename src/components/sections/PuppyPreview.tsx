@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { availablePups, Pup } from '@/lib/puppyData'; // Assuming Pup type is exported from your data file
+import { availablePups } from '@/lib/puppyData'; // ✅ FIX: Removed unused 'Pup' type
 
 // Import Swiper React components and styles
 import { Swiper, SwiperSlide } from 'swiper/react';

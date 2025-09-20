@@ -35,3 +35,24 @@
     @apply block w-full bg-gray-100 border-gray-300 rounded-md shadow-sm focus:ring-[rgb(var(--primary))] focus:border-[rgb(var(--primary))] text-gray-900 p-3 transition-colors;
   }
 }
+
+/* Custom Swiper Styles */
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    padding: 28px;
+    border-radius: 9999px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 1.25rem !important;
+    font-weight: 800 !important;
+    color: rgb(var(--secondary));
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(var(--primary)) !important;
+}
