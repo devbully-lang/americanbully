@@ -584,19 +584,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$mo
 ;
 const DiscoverSection = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20",
-        style: {
-            backgroundColor: 'rgb(var(--background))'
-        },
+        className: "py-24 bg-[rgb(var(--background))]",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-6",
             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "bg-white rounded-lg shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2",
+                className: "overflow-hidden bg-white rounded-3xl shadow-2xl grid grid-cols-1 md:grid-cols-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
-                            x: -50
+                            x: -60
                         },
                         whileInView: {
                             opacity: 1,
@@ -607,15 +604,12 @@ const DiscoverSection = ()=>{
                             amount: 0.3
                         },
                         transition: {
-                            duration: 0.7
+                            duration: 0.8
                         },
-                        className: "p-8 md:p-12",
+                        className: "p-10 md:p-16 flex flex-col justify-center",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "text-4xl font-bold mb-4",
-                                style: {
-                                    color: 'rgb(var(--primary))'
-                                },
+                                className: "text-4xl md:text-5xl font-extrabold mb-6 leading-tight tracking-tight text-[rgb(var(--primary))]",
                                 children: "Discover 601 Bullies"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/DiscoverSection.tsx",
@@ -623,57 +617,54 @@ const DiscoverSection = ()=>{
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-4 text-gray-600",
+                                className: "space-y-5 text-gray-700 text-lg leading-relaxed",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Thank you for your interest in our exceptional American Bullies! We currently have adorable puppies and young adults of outstanding quality, ready to join approved, loving families."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                                        lineNumber: 22,
+                                        lineNumber: 24,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: "Our American Bullies are healthy, well-socialized, and bred for exceptional temperament, ensuring they become the perfect companions. With over 9 years of dedicated, selective breeding, we strive for continuous improvement with each generation."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                                        lineNumber: 25,
+                                        lineNumber: 27,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "When inquiring about the cost, please note that each puppy is individually priced based on their pedigree, structure, and show potential. This reflects the time, effort, love, and significant investment we’ve dedicated to producing top-quality American Bullies. Owning a well-bred, healthy puppy is an investment in a lifelong companion."
+                                        children: "When inquiring about the cost, please note that each puppy is individually priced based on their pedigree, structure, and show potential. This reflects the time, effort, love, and significant investment we’ve dedicated to producing top-quality American Bullies."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                                        lineNumber: 28,
+                                        lineNumber: 30,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "font-semibold",
-                                        style: {
-                                            color: 'rgb(var(--secondary))'
-                                        },
+                                        className: "font-semibold text-[rgb(var(--secondary))]",
                                         children: "Due to high demand, we kindly ask for serious inquiries only."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                                        lineNumber: 31,
+                                        lineNumber: 33,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                                lineNumber: 21,
+                                lineNumber: 23,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                                 href: "/contact",
-                                className: "inline-block mt-8 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-md",
+                                className: "inline-block mt-8 font-bold text-white py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition duration-300",
                                 style: {
                                     backgroundColor: 'rgb(var(--primary))'
                                 },
                                 children: "Inquire Now"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                                lineNumber: 35,
-                                columnNumber: 14
+                                lineNumber: 37,
+                                columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
@@ -684,7 +675,7 @@ const DiscoverSection = ()=>{
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
                         initial: {
                             opacity: 0,
-                            x: 50
+                            x: 60
                         },
                         whileInView: {
                             opacity: 1,
@@ -695,23 +686,23 @@ const DiscoverSection = ()=>{
                             amount: 0.3
                         },
                         transition: {
-                            duration: 0.7
+                            duration: 0.8
                         },
-                        className: "relative min-h-[300px] md:min-h-0",
+                        className: "relative min-h-[300px] md:min-h-full",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                            src: "/images/discover-dog.jpg" // Add a nice picture of one of your dogs here
-                            ,
+                            src: "/images/discover-dog.jpg",
                             alt: "601 Bullies American Bully",
                             fill: true,
-                            className: "object-cover"
+                            className: "object-cover",
+                            priority: true
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                            lineNumber: 52,
+                            lineNumber: 54,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/DiscoverSection.tsx",
-                        lineNumber: 45,
+                        lineNumber: 47,
                         columnNumber: 11
                     }, this)
                 ]

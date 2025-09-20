@@ -3,19 +3,24 @@ import Link from 'next/link';
 
 export const CallToAction = () => {
   return (
-    <section className="py-20 text-white" style={{ backgroundColor: 'rgb(var(--primary))' }}>
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl font-bold mb-4">Ready for a 601 Bully?</h2>
-        <p className="max-w-2xl mx-auto mb-8 text-lg opacity-90">
-          Our goal is to find loving, forever homes for each of our puppies. If you are ready to add a loyal and beautiful American Bully to your family, the first step is to fill out our puppy application.
+    <section className="py-24 text-white" style={{ backgroundColor: 'rgb(var(--primary))' }}>
+      <div className="container mx-auto px-6 text-center max-w-4xl">
+        
+        <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          Ready to Welcome a 601 Bully?
+        </h2>
+        
+        <p className="text-lg md:text-xl opacity-90 mb-10 leading-relaxed">
+          Our mission is to place every puppy in a loving, responsible home. If you’re ready to add a loyal, beautiful American Bully to your family, the first step is filling out our puppy application.
         </p>
+        
         <Link 
           href="/contact" 
-          className="bg-white font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-200 transition duration-300 shadow-lg" 
-          style={{ color: 'rgb(var(--primary))' }}
+          className="inline-block bg-black text-[rgb(var(--primary))] font-bold py-4 px-10 text-lg rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-100 transition duration-300"
         >
           Start Your Application
         </Link>
+        
       </div>
     </section>
   );

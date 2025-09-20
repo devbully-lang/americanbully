@@ -869,39 +869,36 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const CallToAction = ()=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 text-white",
+        className: "py-24 text-white",
         style: {
             backgroundColor: 'rgb(var(--primary))'
         },
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-6 text-center",
+            className: "container mx-auto px-6 text-center max-w-4xl",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-4xl font-bold mb-4",
-                    children: "Ready for a 601 Bully?"
-                }, void 0, false, {
-                    fileName: "[project]/src/components/sections/CallToAction.tsx",
-                    lineNumber: 8,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                    className: "max-w-2xl mx-auto mb-8 text-lg opacity-90",
-                    children: "Our goal is to find loving, forever homes for each of our puppies. If you are ready to add a loyal and beautiful American Bully to your family, the first step is to fill out our puppy application."
+                    className: "text-4xl md:text-5xl font-extrabold leading-tight mb-6",
+                    children: "Ready to Welcome a 601 Bully?"
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/CallToAction.tsx",
                     lineNumber: 9,
                     columnNumber: 9
                 }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-lg md:text-xl opacity-90 mb-10 leading-relaxed",
+                    children: "Our mission is to place every puppy in a loving, responsible home. If you’re ready to add a loyal, beautiful American Bully to your family, the first step is filling out our puppy application."
+                }, void 0, false, {
+                    fileName: "[project]/src/components/sections/CallToAction.tsx",
+                    lineNumber: 13,
+                    columnNumber: 9
+                }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                     href: "/contact",
-                    className: "bg-white font-bold py-3 px-8 rounded-md text-lg hover:bg-gray-200 transition duration-300 shadow-lg",
-                    style: {
-                        color: 'rgb(var(--primary))'
-                    },
+                    className: "inline-block bg-black text-[rgb(var(--primary))] font-bold py-4 px-10 text-lg rounded-full shadow-xl hover:shadow-2xl hover:bg-gray-100 transition duration-300",
                     children: "Start Your Application"
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/CallToAction.tsx",
-                    lineNumber: 12,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, this)
             ]
