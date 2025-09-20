@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 import { Quote, Star } from 'lucide-react';
 
@@ -83,7 +84,7 @@ export const Testimonials = () => {
             >
               <header className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-4">
-                  <img src={testimonial.avatar} alt={testimonial.name} className="w-10 h-10 rounded-full border-2 border-accent/50" />
+                  
                   <div>
                     <figcaption className="font-bold text-lg text-white">
                       {testimonial.name}
