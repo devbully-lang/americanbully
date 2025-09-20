@@ -10,6 +10,13 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      // ✅ ADD THIS NEW OBJECT to the array
+      {
+        protocol: 'https',
+        hostname: 'api.dicebear.com',
+        port: '',
+        pathname: '/7.x/initials/svg/**',
+      },
     ],
   },
 };
