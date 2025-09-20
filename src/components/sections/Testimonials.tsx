@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { reviewsData, Review } from '@/lib/reviewsData'; // Using your main reviews data
+import { reviewsData } from '@/lib/reviewsData'; // ✅ FIX: Removed unused 'Review' type import
 import { Star, StarHalf, ArrowRight } from 'lucide-react';
 
 // Import Swiper React components and styles
@@ -39,7 +39,7 @@ const TrustpilotIcon = () => <svg xmlns="http://www.w3.org/2000/svg" className="
 
 // --- Main Testimonials Component ---
 export const Testimonials = () => {
-  // ✅ Sort reviews by date and get the 7 most recent
+  // Sort reviews by date and get the 7 most recent
   const recentReviews = [...reviewsData]
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
     .slice(0, 7);
@@ -57,7 +57,6 @@ export const Testimonials = () => {
           </p>
         </div>
 
-        {/* ✅ Swiper Slider Implementation */}
         <Swiper
             modules={[Autoplay, Pagination]}
             spaceBetween={30}
@@ -75,7 +74,7 @@ export const Testimonials = () => {
                 768: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
             }}
-            className="pb-12" // Add padding-bottom for pagination bullets
+            className="pb-12"
         >
           {recentReviews.map((review) => (
             <SwiperSlide key={review.id} className="h-full">
@@ -83,7 +82,8 @@ export const Testimonials = () => {
                     className="bg-white/5 border border-white/10 rounded-xl p-8 h-full flex flex-col justify-between backdrop-blur-sm"
                 >
                     <blockquote className="mb-6">
-                        <p className="text-lg opacity-90 italic line-clamp-5">"{review.content}"</p>
+                        {/* ✅ FIX: Replaced quotes with HTML entities */}
+                        <p className="text-lg opacity-90 italic line-clamp-5">&ldquo;{review.content}&rdquo;</p>
                     </blockquote>
                     <figcaption className="flex items-center gap-4 border-t border-white/10 pt-6">
                         <Image 
@@ -108,7 +108,7 @@ export const Testimonials = () => {
         
         <div className="text-center mt-8">
             <Link 
-                href="/testimonials" // <-- Make sure this path is correct!
+                href="/testimonials"
                 className="inline-flex items-center group text-white font-bold py-3 px-8 rounded-lg border-2 border-white/50 bg-white/10
                            backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-secondary shadow-lg"
             >
