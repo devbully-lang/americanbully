@@ -1,6 +1,6 @@
-import Image from 'next/image';
+
 import React from 'react';
-import { Quote, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 // --- Reusable Star Rating Component (No changes needed here) ---
 const StarRating = ({ rating }: { rating: number }) => {
