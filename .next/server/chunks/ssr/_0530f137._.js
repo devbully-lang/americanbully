@@ -179,6 +179,7 @@ var { g: global, __dirname } = __turbopack_context__;
 // This is our single source of truth for puppies for sale.
 // When you add a puppy here, it will automatically show up on the
 // homepage preview AND the main "Available Puppies" page.
+// lib/puppyData.ts
 __turbopack_context__.s({
     "availablePups": (()=>availablePups)
 });
@@ -374,6 +375,7 @@ const availablePups = [
 
 var { g: global, __dirname } = __turbopack_context__;
 {
+// src/components/sections/PuppyPreview.tsx
 __turbopack_context__.s({
     "PuppyPreview": (()=>PuppyPreview)
 });
@@ -388,156 +390,141 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$puppyData$2e$t
 const PuppyPreview = ()=>{
     const pupsToShow = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$puppyData$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["availablePups"].slice(0, 3);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "py-20 bg-white",
+        className: "py-24 bg-gradient-to-b from-white via-[#f9f9f9] to-white",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "container mx-auto px-6",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                    className: "text-4xl font-bold text-center mb-12",
+                    className: "text-5xl font-extrabold text-center mb-14 tracking-tight",
                     style: {
                         color: 'rgb(var(--secondary))'
                     },
-                    children: "Our Newest Pups"
+                    children: "Our Newest Arrivals"
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                    lineNumber: 12,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, this),
                 pupsToShow.length > 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",
+                    className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10",
                     children: pupsToShow.map((pup)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "bg-white rounded-lg shadow-lg overflow-hidden group border border-black/10",
+                            className: "bg-white/80 border border-gray-200 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300 backdrop-blur-md group relative",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                     href: `/puppies/${pup.slug}`,
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                src: pup.image,
-                                                alt: pup.name,
-                                                width: 500,
-                                                height: 500,
-                                                className: "w-full h-72 object-cover"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                                lineNumber: 22,
-                                                columnNumber: 21
-                                            }, this),
-                                            pup.status === 'Available' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                className: "absolute top-3 right-3 text-white text-xs font-bold px-2 py-1 rounded-full",
-                                                style: {
-                                                    backgroundColor: 'rgb(var(--primary))'
-                                                },
-                                                children: "AVAILABLE"
-                                            }, void 0, false, {
-                                                fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                                lineNumber: 30,
-                                                columnNumber: 23
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                        lineNumber: 21,
-                                        columnNumber: 19
-                                    }, this)
-                                }, void 0, false, {
+                                    className: "block relative",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                            src: pup.image,
+                                            alt: pup.name,
+                                            width: 500,
+                                            height: 500,
+                                            className: "w-full h-80 object-cover rounded-t-3xl group-hover:scale-105 transition-transform duration-300"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/PuppyPreview.tsx",
+                                            lineNumber: 26,
+                                            columnNumber: 19
+                                        }, this),
+                                        pup.status === 'Available' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "absolute top-4 right-4 bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md",
+                                            children: "AVAILABLE"
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/components/sections/PuppyPreview.tsx",
+                                            lineNumber: 34,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                    lineNumber: 20,
+                                    lineNumber: 25,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "p-6 text-center",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-2xl font-bold mb-2",
-                                            style: {
-                                                color: 'rgb(var(--primary))'
-                                            },
+                                            className: "text-2xl font-bold mb-2 text-gray-800 group-hover:text-[rgb(var(--primary))] transition-colors duration-300",
                                             children: pup.name
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                            lineNumber: 37,
+                                            lineNumber: 41,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-600 mb-4 h-16",
+                                            className: "text-gray-500 mb-4 min-h-[64px] italic",
                                             children: pup.description
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                            lineNumber: 38,
+                                            lineNumber: 44,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                                             href: `/puppies/${pup.slug}`,
-                                            className: "font-bold transition-colors",
-                                            style: {
-                                                color: 'rgb(var(--secondary))'
-                                            },
+                                            className: "inline-block font-semibold text-[rgb(var(--secondary))] hover:underline",
                                             children: "See More Details →"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                            lineNumber: 39,
+                                            lineNumber: 45,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                                    lineNumber: 36,
+                                    lineNumber: 40,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, pup.name, true, {
                             fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                            lineNumber: 19,
+                            lineNumber: 21,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                    lineNumber: 17,
+                    lineNumber: 19,
                     columnNumber: 11
                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center text-xl text-gray-600 bg-gray-50 p-12 rounded-lg",
+                    className: "text-center text-xl text-gray-600 bg-gray-100 p-12 rounded-xl shadow-sm",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         children: "No puppies currently available. Check back soon!"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                        lineNumber: 48,
+                        lineNumber: 57,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                    lineNumber: 47,
+                    lineNumber: 56,
                     columnNumber: 11
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mt-12",
+                    className: "text-center mt-16",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                         href: "/puppies",
-                        className: "text-white font-bold py-3 px-8 rounded-lg transition duration-300",
+                        className: "inline-block text-white text-lg font-semibold py-3 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl",
                         style: {
                             backgroundColor: 'rgb(var(--primary))'
                         },
                         children: "View All Available Puppies"
                     }, void 0, false, {
                         fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                        lineNumber: 53,
+                        lineNumber: 62,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-                    lineNumber: 52,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-            lineNumber: 11,
+            lineNumber: 13,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/components/sections/PuppyPreview.tsx",
-        lineNumber: 10,
+        lineNumber: 12,
         columnNumber: 5
     }, this);
 };

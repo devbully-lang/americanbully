@@ -2,6 +2,30 @@
 // When you add a puppy here, it will automatically show up on the
 // homepage preview AND the main "Available Puppies" page.
 
+// lib/puppyData.ts
+
+export interface Pup {
+  name: string;
+  slug: string;
+  image: string;
+  gallery: string[];
+  price: number;
+  status: 'Available' | 'Reserved' | 'Sold';
+  gender: 'Male' | 'Female';
+  breedType: string;
+  registry: string;
+  hypoallergenic: string;
+  vaccinations: string;
+  shipping: string;
+  parentsOnSite: string;
+  guarantee: string;
+  vetCertificate: string;
+  training: string;
+  description: string;
+}
+
+// ... your availablePups array
+
 export const availablePups = [
 
   { 
