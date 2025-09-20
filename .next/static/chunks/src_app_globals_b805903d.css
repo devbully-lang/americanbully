@@ -250,10 +250,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   display: none !important;
 }
 
-.pointer-events-none {
-  pointer-events: none;
-}
-
 .visible {
   visibility: visible;
 }
@@ -286,10 +282,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   top: calc(var(--spacing) * 0);
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
 .top-3 {
   top: calc(var(--spacing) * 3);
 }
@@ -300,10 +292,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .top-20 {
   top: calc(var(--spacing) * 20);
-}
-
-.top-24 {
-  top: calc(var(--spacing) * 24);
 }
 
 .top-full {
@@ -476,6 +464,13 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   margin-left: calc(var(--spacing) * 2);
 }
 
+.line-clamp-5 {
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
 .block {
   display: block;
 }
@@ -628,17 +623,16 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   flex: 1;
 }
 
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-grow, .grow {
   flex-grow: 1;
 }
 
 .-translate-x-1\/2 {
   --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
-  translate: var(--tw-translate-x) var(--tw-translate-y);
-}
-
-.-translate-y-1\/2 {
-  --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
   translate: var(--tw-translate-x) var(--tw-translate-y);
 }
 
@@ -855,6 +849,11 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   border-width: 1px;
 }
 
+.border-2 {
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+}
+
 .border-t {
   border-top-style: var(--tw-border-style);
   border-top-width: 1px;
@@ -932,6 +931,16 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   }
 }
 
+.border-white\/50 {
+  border-color: #ffffff80;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .border-white\/50 {
+    border-color: color-mix(in oklab, var(--color-white) 50%, transparent);
+  }
+}
+
 .border-yellow-500 {
   border-color: var(--color-yellow-500);
 }
@@ -946,16 +955,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .bg-black {
   background-color: var(--color-black);
-}
-
-.bg-black\/20 {
-  background-color: #0003;
-}
-
-@supports (color: color-mix(in lab, red, red)) {
-  .bg-black\/20 {
-    background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
-  }
 }
 
 .bg-black\/40 {
@@ -1251,6 +1250,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   padding-bottom: calc(var(--spacing) * 8);
 }
 
+.pb-12 {
+  padding-bottom: calc(var(--spacing) * 12);
+}
+
 .pl-4 {
   padding-left: calc(var(--spacing) * 4);
 }
@@ -1356,10 +1359,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   color: rgb(var(--secondary));
 }
 
-.text-black {
-  color: var(--color-black);
-}
-
 .text-blue-600 {
   color: var(--color-blue-600);
 }
@@ -1456,21 +1455,12 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   opacity: .6;
 }
 
-.opacity-70 {
-  opacity: .7;
-}
-
 .opacity-80 {
   opacity: .8;
 }
 
 .opacity-90 {
   opacity: .9;
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, #0000001a), 0 1px 2px -1px var(--tw-shadow-color, #0000001a);
-  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
 
 .shadow-2xl {
@@ -1614,13 +1604,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 }
 
 @media (hover: hover) {
-  .hover\:-translate-y-2:hover {
-    --tw-translate-y: calc(var(--spacing) * -2);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-}
-
-@media (hover: hover) {
   .hover\:bg-\[rgb\(var\(--primary\)\)\]:hover {
     background-color: rgb(var(--primary));
   }
@@ -1651,14 +1634,8 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 }
 
 @media (hover: hover) {
-  .hover\:bg-white\/10:hover {
-    background-color: #ffffff1a;
-  }
-
-  @supports (color: color-mix(in lab, red, red)) {
-    .hover\:bg-white\/10:hover {
-      background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
-    }
+  .hover\:bg-white:hover {
+    background-color: var(--color-white);
   }
 }
 
@@ -1723,16 +1700,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, #0000001a), 0 8px 10px -6px var(--tw-shadow-color, #0000001a);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-}
-
-.focus\:ring-2:focus {
-  --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
-  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-}
-
-.focus\:outline-none:focus {
-  --tw-outline-style: none;
-  outline-style: none;
 }
 
 .disabled\:opacity-50:disabled {
@@ -1822,12 +1789,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 @media (width >= 48rem) {
   .md\:hidden {
     display: none;
-  }
-}
-
-@media (width >= 48rem) {
-  .md\:inline {
-    display: inline;
   }
 }
 
