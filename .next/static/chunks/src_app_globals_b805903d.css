@@ -2,6 +2,9 @@
 @layer properties {
   @supports (((-webkit-hyphens: none)) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color: rgb(from red r g b)))) {
     *, :before, :after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
@@ -60,9 +63,6 @@
       --tw-backdrop-sepia: initial;
       --tw-duration: initial;
       --tw-ease: initial;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;
@@ -270,6 +270,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   inset: calc(var(--spacing) * 0);
 }
 
+.-top-1\.5 {
+  top: calc(var(--spacing) * -1.5);
+}
+
 .top-0 {
   top: calc(var(--spacing) * 0);
 }
@@ -304,6 +308,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .left-0 {
   left: calc(var(--spacing) * 0);
+}
+
+.left-1\/2 {
+  left: 50%;
 }
 
 .left-4 {
@@ -358,6 +366,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   .container {
     max-width: 96rem;
   }
+}
+
+.mx-2 {
+  margin-inline: calc(var(--spacing) * 2);
 }
 
 .mx-auto {
@@ -471,6 +483,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   display: inline-flex;
 }
 
+.h-3 {
+  height: calc(var(--spacing) * 3);
+}
+
 .h-4 {
   height: calc(var(--spacing) * 4);
 }
@@ -535,6 +551,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   min-height: 100vh;
 }
 
+.w-3 {
+  width: calc(var(--spacing) * 3);
+}
+
 .w-4 {
   width: calc(var(--spacing) * 4);
 }
@@ -561,6 +581,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .w-48 {
   width: calc(var(--spacing) * 48);
+}
+
+.w-56 {
+  width: calc(var(--spacing) * 56);
 }
 
 .w-full {
@@ -601,6 +625,19 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: calc(calc(1 / 2 * 100%) * -1);
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
+
+.rotate-45 {
+  rotate: 45deg;
+}
+
+.rotate-180 {
+  rotate: 180deg;
 }
 
 .transform {
@@ -729,6 +766,12 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   margin-inline-end: calc(calc(var(--spacing) * 6) * calc(1 - var(--tw-space-x-reverse)));
 }
 
+:where(.space-x-8 > :not(:last-child)) {
+  --tw-space-x-reverse: 0;
+  margin-inline-start: calc(calc(var(--spacing) * 8) * var(--tw-space-x-reverse));
+  margin-inline-end: calc(calc(var(--spacing) * 8) * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -786,9 +829,24 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   border-bottom-width: 1px;
 }
 
+.border-l {
+  border-left-style: var(--tw-border-style);
+  border-left-width: 1px;
+}
+
 .border-l-4 {
   border-left-style: var(--tw-border-style);
   border-left-width: 4px;
+}
+
+.border-black\/5 {
+  border-color: #0000000d;
+}
+
+@supports (color: color-mix(in lab, red, red)) {
+  .border-black\/5 {
+    border-color: color-mix(in oklab, var(--color-black) 5%, transparent);
+  }
 }
 
 .border-black\/10 {
@@ -925,6 +983,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   background-color: var(--color-gray-400);
 }
 
+.bg-gray-900 {
+  background-color: var(--color-gray-900);
+}
+
 .bg-green-500 {
   background-color: var(--color-green-500);
 }
@@ -943,6 +1005,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .bg-slate-50 {
   background-color: var(--color-slate-50);
+}
+
+.bg-transparent {
+  background-color: #0000;
 }
 
 .bg-white {
@@ -1063,6 +1129,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   padding: calc(var(--spacing) * 4);
 }
 
+.p-5 {
+  padding: calc(var(--spacing) * 5);
+}
+
 .p-6 {
   padding: calc(var(--spacing) * 6);
 }
@@ -1121,6 +1191,10 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .py-2 {
   padding-block: calc(var(--spacing) * 2);
+}
+
+.py-2\.5 {
+  padding-block: calc(var(--spacing) * 2.5);
 }
 
 .py-3 {
@@ -1189,6 +1263,11 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 .text-5xl {
   font-size: var(--text-5xl);
   line-height: var(--tw-leading, var(--text-5xl--line-height));
+}
+
+.text-base {
+  font-size: var(--text-base);
+  line-height: var(--tw-leading, var(--text-base--line-height));
 }
 
 .text-lg {
@@ -1335,6 +1414,18 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   font-style: italic;
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.underline-offset-2 {
+  text-underline-offset: 2px;
+}
+
 .opacity-60 {
   opacity: .6;
 }
@@ -1409,6 +1500,11 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .backdrop-blur-sm {
   --tw-backdrop-blur: blur(var(--blur-sm));
+  backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
+}
+
+.backdrop-blur-xl {
+  --tw-backdrop-blur: blur(var(--blur-xl));
   backdrop-filter: var(--tw-backdrop-blur, ) var(--tw-backdrop-brightness, ) var(--tw-backdrop-contrast, ) var(--tw-backdrop-grayscale, ) var(--tw-backdrop-hue-rotate, ) var(--tw-backdrop-invert, ) var(--tw-backdrop-opacity, ) var(--tw-backdrop-saturate, ) var(--tw-backdrop-sepia, );
 }
 
@@ -1503,6 +1599,19 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 }
 
 @media (hover: hover) {
+  .group-hover\:text-yellow-300:is(:where(.group):hover *) {
+    color: var(--color-yellow-300);
+  }
+}
+
+@media (hover: hover) {
+  .hover\:-translate-y-0\.5:hover {
+    --tw-translate-y: calc(var(--spacing) * -.5);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+}
+
+@media (hover: hover) {
   .hover\:-translate-y-1:hover {
     --tw-translate-y: calc(var(--spacing) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -1513,6 +1622,12 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   .hover\:-translate-y-2:hover {
     --tw-translate-y: calc(var(--spacing) * -2);
     translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+}
+
+@media (hover: hover) {
+  .hover\:bg-\[rgb\(var\(--primary\)\)\]:hover {
+    background-color: rgb(var(--primary));
   }
 }
 
@@ -1598,6 +1713,12 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 
 .disabled\:opacity-50:disabled {
   opacity: .5;
+}
+
+@media (width >= 40rem) {
+  .sm\:inline {
+    display: inline;
+  }
 }
 
 @media (width >= 40rem) {
@@ -1756,6 +1877,7 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
     --color-red-600: oklch(57.7% .245 27.325);
     --color-orange-500: oklch(70.5% .213 47.604);
     --color-yellow-100: oklch(97.3% .071 103.193);
+    --color-yellow-300: oklch(90.5% .182 98.111);
     --color-yellow-400: oklch(85.2% .199 91.936);
     --color-yellow-500: oklch(79.5% .184 86.047);
     --color-yellow-900: oklch(42.1% .095 57.708);
@@ -1794,6 +1916,8 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
     --text-xs--line-height: calc(1 / .75);
     --text-sm: .875rem;
     --text-sm--line-height: calc(1.25 / .875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-xl: 1.25rem;
@@ -1830,6 +1954,7 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
     --blur-sm: 8px;
     --blur-md: 12px;
     --blur-lg: 16px;
+    --blur-xl: 24px;
     --default-transition-duration: .15s;
     --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     --default-font-family: var(--font-sans);
@@ -2059,6 +2184,24 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
   --primary: 90 70 57;
   --secondary: 41 71 70;
   --accent: 217 185 152;
+}
+
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 
 @property --tw-rotate-x {
@@ -2368,24 +2511,6 @@ button, input:where([type="button"], [type="reset"], [type="submit"]), ::file-se
 @property --tw-ease {
   syntax: "*";
   inherits: false
-}
-
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
 }
 
 @property --tw-scale-x {
