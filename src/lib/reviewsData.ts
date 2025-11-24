@@ -14,12 +14,12 @@ export interface Review {
 // ✅ CORRECTED DATA: Dates now span the last 5 years, with the newest review being 2 days old.
 export const reviewsData: Review[] = [
   {
-    id: 31, // This will appear first when sorted by "Newest"
+    id: 31, 
     author: 'Samuel Baker',
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Samuel Baker',
     rating: 5,
     platform: 'Google',
-    date: '2025-09-18T10:00:00Z', // 2 days ago
+    date: '2025-11-23T10:00:00Z', // yesterday
     content: 'Our puppy is a bundle of joy and has clearly been well-socialized. He got along with our older dog from day one. Fantastic breeder.',
   },
   {
@@ -28,7 +28,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Michael Thompson',
     rating: 5,
     platform: 'Google',
-    date: '2025-09-15T08:30:00Z', // 5 days ago
+    date: '2025-11-22T08:30:00Z',
     content: 'An absolutely seamless experience from start to finish. The team at 601 Bullies are true professionals. Our puppy, Zeus, is healthy, happy, and has the best temperament. You can tell these dogs are raised with love.',
   },
   {
@@ -37,7 +37,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Lauren Cook',
     rating: 5,
     platform: 'Google',
-    date: '2025-09-14T11:00:00Z',
+    date: '2025-11-21T11:00:00Z',
     content: 'The entire experience felt very personal and not transactional at all. They really take the time to get to know you and make sure the puppy is going to a good home.',
   },
   {
@@ -46,7 +46,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Henry Morris',
     rating: 5,
     platform: 'Trustpilot',
-    date: '2025-09-13T09:45:00Z',
+    date: '2025-11-20T09:45:00Z',
     content: 'Our vet commented on the exceptional quality of our pup\'s bone structure and overall health. A testament to a great breeding program.',
     verified: true,
   },
@@ -56,7 +56,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Jessica Chen',
     rating: 5,
     platform: 'Trustpilot',
-    date: '2025-09-12T14:00:00Z',
+    date: '2025-11-19T14:00:00Z',
     content: 'We were nervous about buying a puppy online, but 601 Bullies made us feel comfortable every step of the way. Constant updates, photos, and they answered all our questions. Our little Athena is a dream come true. Highly recommended!',
     verified: true,
   },
@@ -66,7 +66,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Angela Peterson',
     rating: 5,
     platform: 'Google',
-    date: '2025-09-11T20:00:00Z',
+    date: '2025-11-18T20:00:00Z',
     content: 'The weekly video updates of our puppy were the highlight of our month! It was amazing to watch him grow before he came home.',
   },
   {
@@ -75,7 +75,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=The Rodriguez Family',
     rating: 5,
     platform: 'Google',
-    date: '2025-09-10T11:20:00Z',
+    date: '2025-11-17T11:20:00Z',
     content: 'The quality of these American Bullies is second to none. Our vet was incredibly impressed with the puppy\'s health records and structure. A trustworthy breeder that genuinely cares about their dogs.',
   },
   {
@@ -84,7 +84,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Patrick Murphy',
     rating: 4,
     platform: 'Trustpilot',
-    date: '2025-09-09T17:10:00Z',
+    date: '2025-11-16T17:10:00Z',
     content: 'The dog is an absolute superstar, couldn\'t be happier with him. The only reason for 4 stars is that the delivery, which was scheduled for the morning, was delayed until late in the evening on the same day. The delivery driver kept in touch, so it wasn\'t a huge issue, just made for a long day of waiting. The pup arrived safe and happy.',
     verified: true,
   },
@@ -94,7 +94,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=David Lee',
     rating: 5,
     platform: 'Trustpilot',
-    date: '2025-09-08T18:45:00Z',
+    date: '2025-11-15T18:45:00Z',
     content: 'Top-tier service and exceptional dogs. The entire process was transparent and professional. Our boy is a perfect example of the breed.',
     verified: true,
   },
@@ -104,7 +104,7 @@ export const reviewsData: Review[] = [
     avatar: 'https://api.dicebear.com/7.x/initials/svg?seed=Katherine Bailey',
     rating: 5,
     platform: 'Google',
-    date: '2025-09-07T13:00:00Z',
+    date: '2025-11-14T13:00:00Z',
     content: 'A truly professional and ethical breeder. The health guarantee they provide is comprehensive and shows they stand behind their dogs 100%.',
   },
   {
